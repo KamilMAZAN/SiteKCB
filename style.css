@@ -47,6 +47,12 @@ header {
 .menu-container a {
     text-decoration: none;
     color: #fff;
+    font-weight: normal; /* Réinitialiser le poids de la police */
+    transition: font-weight 0.3s; /* Ajouter une transition de l'animation */
+}
+
+.menu-container a:hover {
+    font-weight: bold; /* Mettre en gras au survol */
 }
  
 
