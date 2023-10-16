@@ -55,7 +55,11 @@ header {
     font-weight: bold; /* Mettre en gras au survol */
 }
  
-
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
     /* Style pour le pied de page */
   
   footer {
