@@ -2,6 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex; /* Utiliser Flexbox pour centrer verticalement et horizontalement */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Hauteur de la vue à 100% pour centrer sur toute la page */
 }
 
 header {
