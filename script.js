@@ -1,24 +1,20 @@
-function toggleFullScreen() {
-    var image = document.querySelector('image-containerimg1 img');
-    if (!document.fullscreenElement) {
-      if (image.requestFullscreen) {
-        image.requestFullscreen();
-      } else if (image.mozRequestFullScreen) {
-        image.mozRequestFullScreen();
-      } else if (image.webkitRequestFullscreen) {
-        image.webkitRequestFullscreen();
-      } else if (image.msRequestFullscreen) {
-        image.msRequestFullscreen();
-      }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      }
+document.addEventListener("DOMContentLoaded", function() {
+    const menuLinks = document.querySelectorAll("nav a");
+    
+    menuLinks.forEach(link => {
+        link.addEventListener("click", scrollToSection);
+    });
+    
+    function scrollToSection(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth"
+            });
+        }
     }
-  }
+});
