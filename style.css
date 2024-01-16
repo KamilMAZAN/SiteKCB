@@ -12,11 +12,16 @@ header {
     text-align: center;
 }
 
+.logo-container {
+    flex-grow: 1;
+}
+
 .menu-trigger {
     display: inline-block;
     cursor: pointer;
     position: relative;
     user-select: none;
+    flex-grow: 2;
 }
 
 .menu-container {
