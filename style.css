@@ -1,21 +1,61 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3; /* Couleur de fond de l'en-tête */
+    padding: 10px 5%;
+}
+
+.logo-header img {
+    height: auto;
+    width: 200px; /* Ajustez en fonction de vos besoins */
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-trigger {
+    cursor: pointer;
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    right: 5%;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-trigger:hover + .menu-container,
+.menu-container:hover {
+    display: block;
+}
+
+.menu-container ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-   
 }
 
-header {
-    background-color: black;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
-
+.menu-container ul li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
 }
 
-.logo-container img {
-    flex-grow: 1;
-    height: auto;
-    margin-right: 20px;
+.menu-container ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu-container ul li:hover {
+    background-color: #f1f1f1;
 }
