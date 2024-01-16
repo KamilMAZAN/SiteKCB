@@ -16,7 +16,7 @@ header {
 
 .logo-container {
     flex-grow: 1;
-    height: 50px;
+    size: 50px;
     margin-right: 20px;
 }
 
