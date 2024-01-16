@@ -1,3 +1,9 @@
+
+.background-image {
+    /*mettre l'image a 50% de transparence*/
+    opacity: 0.5;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f3f3f3; /* Couleur de fond de l'en-tête */
+    background-color: #000000; /* Couleur de fond de l'en-tête */
     padding: 10px 5%;
 }
 
