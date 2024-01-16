@@ -21,12 +21,18 @@ header {
 }
 
 .menu-trigger {
-    display: inline-block;
+    background-color: #333; /* Couleur d'arrière-plan */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Retirer la bordure par défaut */
     cursor: pointer;
-    position: relative;
-    user-select: none;
-    flex-grow: 2;
+    padding: 10px 20px; /* Ajustez selon vos besoins */
+    /* Autres styles... */
 }
+
+.menu-trigger:hover .menu-container {
+    display: block;
+}
+
 
 .menu-container {
     display: none;
@@ -40,9 +46,7 @@ header {
     left: 0;
 }
 
-.menu-trigger:hover .menu-container {
-    display: block;
-}
+
 
 .menu-container ul {
     list-style-type: none;
